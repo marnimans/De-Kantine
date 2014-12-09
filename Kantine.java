@@ -30,6 +30,7 @@ public class Kantine {
      * deze op het dienblad.
      * Tenslotte sluit de Persoon zich aan bij de rij
      * voor de kassa.
+     * @param persoon en artikelnamen
      */
     public void loopPakSluitAan(Persoon persoon, String[] artikelnamen){
         for(int index = 0; index < artikelnamen.length; index ++) {
@@ -51,6 +52,7 @@ public class Kantine {
     
     /**
      * retourneerd de waarde van kassa
+     * @return kassa
      */
     public Kassa getKassa(){
         return kassa;
@@ -58,6 +60,7 @@ public class Kantine {
     
     /**
      * set de kantine aanbod vanuit kantine simulator
+     * @param kantineAanbod
      */
     public void setKantineAanbod(KantineAanbod kantineAanbod){
         this.kantineAanbod = kantineAanbod;
@@ -65,6 +68,7 @@ public class Kantine {
     
     /**
      * returnd de kantine aanbod
+     * @return kantineAanbod
      */
     public KantineAanbod getKantineAanbod(){
         return kantineAanbod;
