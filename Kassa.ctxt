@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=kassarij
+comment0.target=Kassa(KassaRij)
+comment0.text=\r\n\ Constructor\ voor\ kassa\r\n\ @param\r\n
+comment1.params=persoon
+comment1.target=void\ rekenAf(Persoon)
+comment1.text=\r\n\ Deze\ methode\ vraagt\ het\ aantal\ artikelen\ en\ de\ totaalprijs\ op.\r\n\ (De\ implementatie\ wordt\ later\ vervangen\r\n\ door\ een\ echte\ betaling\ door\ de\ persoon.)\r\n\ @param\ persoon\ die\ moet\ afrekenen\r\n
+comment2.params=
+comment2.target=int\ totaalArtikelen()
+comment2.text=\r\n\ Geeft\ het\ aantal\ artikelen\ dat\ de\ kassa\r\n\ heeft\ gepasseerd,\r\n\ vanaf\ het\ moment\ dat\ de\ methode\ resetWaarden\r\n\ is\ aangeroepen.\r\n\ retouneert\ aantal\ artikelen\r\n\ @return\ totaal\ artikelen\r\n
+comment3.params=
+comment3.target=double\ hoeveelheidGeldInKassa()
+comment3.text=\r\n\ Geeft\ het\ totaalbedrag\ van\ alle\ artikelen\ die\r\n\ de\ kassa\ zijn\ gepasseerd,\ vanaf\ het\ moment\ dat\ de\ methode\r\nresetKassa\r\n\ is\ aangeroepen.\r\n\ retouneert\ de\ hoeveelheid\ geld\ in\ de\ kassa\r\n\ @return\ totaal\ betalingen\r\n
+comment4.params=
+comment4.target=void\ resetKassa()
+comment4.text=\r\n\ reset\ de\ waarden\ van\ het\ aantal\ gepasseerde\ artikelen\ en\r\n\ de\ totale\ hoeveelheid\ geld\ in\ de\ kassa.\r\n
+comment5.params=persoon
+comment5.target=int\ artikelenOpDienblad(Persoon)
+comment5.text=\r\n\ Telt\ aantal\ artikelen\ op\ dienblad\ per\ persoon\r\n\ @param\ persoon\r\n\ @return\ artikelen\ op\ dienblad\r\n
+comment6.params=persoon
+comment6.target=double\ totaalPrijsDienblad(Persoon)
+comment6.text=\r\n\ geeft\ de\ totaal\ prijs\ per\ persoon\ door\r\n\ @param\ persoon\r\n\ @return\ prijs\r\n
+numComments=7
