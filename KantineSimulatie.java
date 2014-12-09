@@ -53,8 +53,7 @@ public class KantineSimulatie {
     }
     
     /**
-     * Methode om een array van random getallen liggend tussen min en
-    max
+     * Methode om een array van random getallen liggend tussen min en max
      * van de gegeven lengte te genereren
      * @param lengte
      * @param min
