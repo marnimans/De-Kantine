@@ -76,7 +76,8 @@ public class Kassa {
     public int artikelenOpDienblad(Persoon persoon){
         int index = 0;
         if(persoon.getDienblad().getIterator() == null){
-            System.out.println("Pak eerst een dienblad.");
+            System.out.println("er staan geen artikelen op het dienblad.");
+            return index;
         }
         else {
             Iterator<Artikel> it = persoon.getDienblad().getIterator();
@@ -84,8 +85,9 @@ public class Kassa {
                 it.next();
                 index++;
             }
+            return index;
         }
-        return index;
+
     }
 
     /**
@@ -95,10 +97,16 @@ public class Kassa {
      */
     public double totaalPrijsDienblad(Persoon persoon){
         double prijs = 0.0;
-        Iterator<Artikel> it = persoon.getDienblad().getIterator();
-        while(it.hasNext()) {
-            prijs += it.next().getArtikelPrijs();
+        if(persoon.getDienblad().getIterator() == null){
+            System.out.println("er staan geen artikelen op het dienblad.");
+            return prijs;
         }
-        return prijs;
+        else{
+            Iterator<Artikel> it = persoon.getDienblad().getIterator();
+            while(it.hasNext()) {
+                prijs += it.next().getArtikelPrijs();
+            }
+            return prijs;
+        }
     }
 }
