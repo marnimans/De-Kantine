@@ -74,7 +74,7 @@ public class Kassa {
      * @return artikelen op dienblad
      */
     public int artikelenOpDienblad(Persoon persoon){
-        int inter = 0;
+        int index = 0;
         if(persoon.getDienblad().getIterator() == null){
             System.out.println("Pak eerst een dienblad.");
         }
@@ -82,10 +82,10 @@ public class Kassa {
             Iterator<Artikel> it = persoon.getDienblad().getIterator();
             while(it.hasNext()) {
                 it.next();
-                inter++;
+                index++;
             }
         }
-        return inter;
+        return index;
     }
 
     /**
